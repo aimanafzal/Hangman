@@ -15,7 +15,7 @@ class Game extends Component {
     return (
       <div className="Game-content">
         <div className="Game-SideBySide">
-          {this._renderInputPanel()}
+          {this.renderInputPanel()}
           <div className="Game-Hangman">
             {hangmanAttempts(this.props.guesses)}
           </div>
@@ -24,12 +24,12 @@ class Game extends Component {
     );
   }
 
-  _renderInputPanel() {
+  renderInputPanel() {
     const hasAttemptsLeft = this.props.guesses > 0;
     const gameWon = this.props.gameState === GAME_WON;
     const content = hasAttemptsLeft
         ? gameWon
-          ? this._renderGameFinished('Congrats! 🤗 🏆 🤗', 'Game-GameWin')
+          ? this._renderGameFinished('Congrats!', 'Game-GameWin')
           : (
             <div className="Game-VirtualKeyboard">
               <VirtualKeyboard
@@ -38,7 +38,7 @@ class Game extends Component {
               />
             </div>
           )
-        : this._renderGameFinished('GAME OVER ☠️', 'Game-GameOver');
+        : this._renderGameFinished('GAME OVER', 'Game-GameOver');
 
     return (
       <div className="Game-InputPanel">

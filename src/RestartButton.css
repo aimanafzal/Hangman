@@ -1,7 +1,7 @@
 .App-Restart > button {
   border-radius: 8px;
   padding: 6px 12px;
-  background: linear-gradient(to bottom, #ff6600 0%, #ff6600 100%);
+  background: linear-gradient(to bottom, rgb(240, 5, 5) 0%, rgb(240, 5, 5) 100%);
   font-weight: 300;
   font-size: .6em;
   border: none;
@@ -21,5 +21,5 @@
 .App-Restart > button:hover {
   text-decoration: none;
   color: #fff;
-  background: linear-gradient(to bottom, #000 0%, #000 100%);
+  background: linear-gradient(to bottom, rgb(3, 250, 56) 0%, #000 100%);
 }
