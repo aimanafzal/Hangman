@@ -19,47 +19,47 @@ class Hangman extends Component {
       <svg width="500" height="550">
         <polyline points="400,500 100,500 150,500 150,100 320,100 320,150"
                   style={styles.post} />
-        {this._renderBody()}
-        {this._renderLeftArm()}
-        {this._renderRightArm()}
-        {this._renderLeftLeg()}
-        {this._renderRightLeg()}
-        {this._renderHead()}
+        {this.renderBody()}
+        {this.renderLeftArm()}
+        {this.renderRightArm()}
+        {this.renderLeftLeg()}
+        {this.renderRightLeg()}
+        {this.renderHead()}
       </svg>
     );
   }
 
-  _renderHead() {
+  renderHead() {
     return this.props.body
         ? <circle cx="320" cy="190" r="40" fill="black" />
         : null;
   }
 
-  _renderBody() {
+  renderBody() {
     return this.props.body
       ? <line x1="320" y1="190" x2="320" y2="360" style={styles.character} />
       : null;
   }
 
-  _renderLeftArm() {
+  renderLeftArm() {
     return this.props.leftArm
       ? <line x1="320" y1="260" x2="250" y2="230" style={styles.character} />
       : null;
   }
 
-  _renderRightArm() {
+  renderRightArm() {
     return this.props.rightArm
       ? <line x1="320" y1="260" x2="390" y2="230" style={styles.character} />
       : null;
   }
 
-  _renderLeftLeg() {
+  renderLeftLeg() {
     return this.props.leftLeg
       ? <line x1="320" y1="360" x2="250" y2="450" style={styles.character} />
       : null;
   }
 
-  _renderRightLeg() {
+  renderRightLeg() {
     return this.props.rightLeg
       ? <line x1="320" y1="360" x2="390" y2="450" style={styles.character} />
       : null;
