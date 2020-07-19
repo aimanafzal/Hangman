@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import gameFactory from './game-state-factory';
 import { GAME_WON, GAME_STARTED, GAME_OVER } from './game-states';
-// import AppHeader from './AppHeader';
-// import AppFooter from './AppFooter';
+
 import Game from './Game';
 
 import './App.css';

@@ -8,7 +8,7 @@ class AppHeader extends Component {
     return (
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>React Hangman</h2>
+        <h2>Hangman</h2>
       </div>
     );
   }

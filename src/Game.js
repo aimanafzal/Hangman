@@ -42,7 +42,7 @@ class Game extends Component {
 
     return (
       <div className="Game-InputPanel">
-        {this._renderWord()}
+        {this.renderWord()}
         <div className="Game-AttemptsLeft">
           <AttemptsLeft attempts={this.props.guesses} />
         </div>
@@ -63,7 +63,7 @@ class Game extends Component {
     )
   }
 
-  _renderWord() {
+  renderWord() {
     return (
       <div className="Game-Word">
         <Word>

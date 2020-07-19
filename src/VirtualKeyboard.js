@@ -8,19 +8,19 @@ class VirtualKeyboard extends Component {
     return (
       <div className="VirtualKeyboard">
         <div key="First" className="VirtualKeyboard-FirstRow">
-          {this._renderRow(VirtualKeyboard.FIRST_ROW)}
+          {this.renderRow(VirtualKeyboard.FIRST_ROW)}
         </div>
         <div key="Second" className="VirtualKeyboard-SecondRow">
-          {this._renderRow(VirtualKeyboard.SECOND_ROW)}
+          {this.renderRow(VirtualKeyboard.SECOND_ROW)}
         </div>
         <div key="Third" className="VirtualKeyboard-ThirdRow">
-          {this._renderRow(VirtualKeyboard.THIRD_ROW)}
+          {this.renderRow(VirtualKeyboard.THIRD_ROW)}
         </div>
       </div>
     );
   }
 
-  _renderRow(letters) {
+  renderRow(letters) {
     const children = letters
       .filter(letter => this.props.excluded.indexOf(letter) === -1)
       .map(letter => (
