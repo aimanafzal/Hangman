@@ -1,3 +1,6 @@
+### How to use the application
+Please use the virtual keyboard displayed on the screen to input  
+
 
 ### Installing in local environment
 npm install 
